@@ -37,13 +37,14 @@ html {
 }
 
 .format-toolbar > span {
+  display: flex;
+  flex-direction: column;
+  height: 22px;
+  width: 22px;
   margin: 0 2px 0 2px;
+  border-radius: 2px;
 }
 
-.format-toolbar > span svg {
-  stroke: lightgrey;
-}
-
-.format-toolbar > span.active svg {
-  stroke: black;
+.format-toolbar > span.active {
+  background-color: #b4d6ff;
 }
