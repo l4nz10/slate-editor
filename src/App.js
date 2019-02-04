@@ -5,7 +5,7 @@ import TextEditor from './TextEditor';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="editor-container">
         <TextEditor />
       </div>
     );

@@ -21,3 +21,14 @@ export const RenderMark = options => {
     }
   };
 };
+
+export const RenderNode = options => {
+  const { type, component } = options;
+  return {
+    renderNode(props, editor, next) {
+      return props.node.type === type
+        ? React.createElement(component, props)
+        : next();
+    }
+  };
+};

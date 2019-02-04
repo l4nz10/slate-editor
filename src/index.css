@@ -19,7 +19,7 @@ html {
   height: 100%;
 }
 
-.App {
+.editor-container {
   color: rgb(17, 17, 17);
   max-width: 740px;
   background-color: rgb(255, 255, 255);
@@ -39,6 +39,7 @@ html {
 .format-toolbar > span {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 22px;
   width: 22px;
   margin: 0 2px 0 2px;

@@ -7,6 +7,7 @@ import FormatToolbar from './FormatToolbar';
 import Bold, { BoldButton } from './plugins/Bold';
 import Italic, { ItalicButton } from './plugins/Italic';
 import Underline, { UnderlineButton } from './plugins/Underline';
+import Paragraph from './plugins/Paragraph';
 
 const initialValue = Value.fromJSON({
   document: {
@@ -29,7 +30,7 @@ const initialValue = Value.fromJSON({
   }
 });
 
-const plugins = [Bold(), Italic(), Underline()];
+const plugins = [Paragraph(), Bold(), Italic(), Underline()];
 const buttons = [BoldButton, ItalicButton, UnderlineButton];
 
 class TextEditor extends React.Component {
